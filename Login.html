@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        th {
+            text-align: left;
+            padding-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="reset"] {
+            background-color: #ccc;
+        }
+
+        button[type="reset"]:hover,
+        button[type="reset"]:focus,
+        button[type="reset"]:active {
+            background-color: #999;
+        }
+
+        button[type="submit"]:hover,
+        button[type="submit"]:focus,
+        button[type="submit"]:active {
+            background-color: #45a049;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container fade-in">
+        <h1>Enter Details to Login</h1>
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <th><label for="id">Id:</label></th>
+                    <th><input type="text" name="id" id="id"></th>
+                </tr>
+                <tr>
+                    <th><label for="password">Password:</label></th>
+                    <th><input type="password" name="password" id="password"></th>
+                </tr>
+                <tr>
+                    <th><button type="reset">Cancel</button></th>
+                    <th><button>Login</button></th>
+                </tr>
+            </table>
+        </form>
+        <br>
+        <a href="">Forgot Password?</a>
+        <br><br>
+        <a href="SelectRole.html"><button>Click here to create a new Account</button></a>
+        <br><br>
+        <a href="Home.html"><button>Home</button></a>
+    </div>
+</body>
+</html>
